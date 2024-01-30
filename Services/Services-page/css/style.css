@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PeligroStencil';
+    src: url('../font/Peligro\ Stencil.otf'); /* IE9 Compat Modes */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+header{
+    background: url('../services/Background.png');
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px 15px 80px;
+    
+}
+.col-1 .logo img{
+    display: block;
+    width: 100%;
+}
+.col-1{
+    width: 12%;
+}
+.col-2{
+    width: 40%;
+}
+.col-2 .social-icon{
+    text-align: right;
+    margin-right: 25px;
+    padding-bottom: 13px;
+}
+.col-2 .social-icon .icon-clr a{
+    display: inline-block;
+    padding-right: 20px;
+}
+.col-2 .social-icon .icon-clr i{
+    color: transparent;
+    font-size: 20px;
+    background: linear-gradient(#EEF2F3,#8399A2);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.col-2 .social-icon .icon-clr i:hover{
+     color: transparent;
+    background: linear-gradient(#E60B09,#E9D022);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.4s;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+.menu nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu ul li{
+    list-style-type: none;
+    position: relative;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'PeligroStencil';
+}
+.menu ul li .underline-link::before{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    color: transparent;
+    background: linear-gradient(78deg, rgba(230,11,9,1) 0%, rgba(233,208,34,1) 100%);;
+    width: 0%;
+    bottom: 0px;
+    left: 0;
+    transition: 0.7s;
+}
+.menu ul li .underline-link:hover:before{
+    width: 100%;
+}
+.menu ul li .active-clr{
+    color: transparent;
+    background: linear-gradient(#E60B09,#E9D022);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.4s;
+}
+.menu ul li a:hover{
+    color: transparent;
+    background: linear-gradient(#E60B09,#E9D022);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.4s;
+}
+.menu ul .get-strted-btn{
+    width: 30%;
+}
+.menu ul .get-strted-btn a{
+    display: block;
+    background: url('../services/Property\ 1=Get\ Started\ \(1\).png');
+    padding: 20px;
+    background-size: cover;
+}
+.menu ul .get-strted-btn a:hover{
+    background: url('../services/Property\ 1=Get\ Started\ H\ \(1\).png');
+    background-size: cover;
+    transition: 0.5s;
+}
+.slider-txt{
+    padding: 50px 80px 20px 80px;
+    background-image: url('../services/Services\ &\ Work\ Galleries.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 41px -11px;
+
+}
+.slider-heading h1{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-family: 'PeligroStencil';
+    font-weight: 500;
+}
+.slider-container{
+    padding: 20px 80px 50px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-container .nav-area{
+    width: 20%;
+    padding-top: 20px;
+    /* margin-left: 50px; */
+}
+.slider-container .nav-area ul li {
+    list-style-type: none;
+    padding: 5px 0px 32px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.slider-container .nav-area ul li .img-hover-chng{
+    display: none;
+    width: 50px;
+    position: relative;
+}
+.slider-container .nav-area ul li .img-hover-chng img{
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 0%;
+}
+.slider-container .nav-area ul li:hover .img-hover-chng{
+    display: block;
+    transition: 1s ease-in-out;
+}
+.slider-container .nav-area li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    display: block;
+}
+/* .slider-container .nav-area li a::before{
+    content:url('/Services-page/services/icon1.png');
+    display: block;
+    position: absolute;
+    left: -62px;
+    top: -23px;
+} */
+.slider-container .nav-area li a::before{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    color: transparent;
+    background: linear-gradient(78deg, rgba(230,11,9,1) 0%, rgba(233,208,34,1) 100%);;
+    width: 0%;
+    bottom: 21px;
+    left: 0;
+    transition: 0.7s;
+}
+.slider-container .nav-area li a:hover:before{
+    width: 100%;
+}
+
+.slider-container .image-area{
+    width: 75%;
+}
+.slider-container .image-area img{
+    width: 100%;
+}
+.container-cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+}
+.container-cta .col-text-cta{
+    background: url('../services/Improve\ Your\ Company\ Image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 15px -51px;
+    width: 80%;
+}
+.container-cta .col-text-cta h2{
+    color: white;
+    font-size: 29px;
+    font-weight: 500;
+    font-family: 'PeligroStencil';
+    padding-bottom: 10px;
+}
+.container-cta .col-text-cta p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    color: white;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+.container-cta .col-2-button{
+    width: 13%;
+}
+.container-cta .col-2-button a{
+    display: block;
+    background:url('../services/Property\ 1=Get\ Started.png');
+    padding: 20px;
+    background-size: cover;
+}
+.container-cta .col-2-button :hover{
+    background: url('../services/Property\ 1=Get\ Started\ H.png');
+    background-size: cover;
+    transition: 0.5s;
+}
+footer{
+    background-color: black;
+}
+.footer-container{
+    padding: 90px 80px 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../services/footer\ bg.png');
+}
+.footer-logo{
+    width: 10%;
+}
+.footer-logo a{
+    display: block;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-menu{
+    width: 27%;
+}
+.footer-menu h2{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'PeligroStencil';
+    padding-bottom: 10px;
+}
+.footer-menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu ul li{
+    list-style: none;
+    position: relative;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer-menu ul li a::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    color: transparent;
+    background: black;
+    width: 0%;
+    bottom: 0px;
+    left: 0;
+    transition: 0.7s;
+}
+.footer-menu ul li a:hover:before{
+    width: 100%;
+}
+.get-in-touch{
+    width: 30%;
+}
+.get-in-touch h2{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'PeligroStencil';
+    padding-bottom: 12px;
+}
+.get-in-touch li{
+    list-style-type: none;
+    font-size: 15px;
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer-social-icons{
+    width: 12%;
+}
+.footer-social-icons h2{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'PeligroStencil';
+    padding-bottom: 13px;
+}
+.footer-social-icons .icon-clr i{
+    color: transparent;
+    font-size: 20px;
+    color: black;
+}
+.footer-social-icons .icon-clr i:hover{
+    color: transparent;
+    background: linear-gradient(#E60B09,#E9D022);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.4s;
+}
+.footer-social-icons p{
+    display: flex;
+    justify-content: space-between;
+}
+/* Media Query For Laptop */
+@media(max-width:1200px){
+    .col-2 {
+        width: 46%;
+    }
+}
+@media(max-width:1060px){
+    .col-2 {
+        width: 49%;
+    }
+    .container-cta .col-2-button {
+        width: 16%;
+    }
+}
+@media(max-width:985px){
+    .col-2 {
+        width: 54%;
+    }
+    .container-cta .col-2-button {
+        width: 18%;
+    }
+}
+@media(max-width:873px){
+    .col-2 {
+        width: 60%;
+    }
+    .container-cta .col-2-button {
+        width: 20%;
+    }
+}
+@media(max-width:807px){
+    .col-2 {
+        width: 65%;
+    }
+    .container-cta .col-2-button {
+        width: 22%;
+    }
+}
+
+/* Media Query For Mobile */
+@media(max-width:768px){
+    .container{
+        padding: 15px 50px;
+    }
+    .col-2 .social-icon {
+        display: none;
+    }
+    nav #icon{
+        display: block;
+    }
+    .menu nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640d8;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all 0.5s;
+    }
+    .menu nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .menu nav ul li a{
+        font-size: 25px;
+    }
+    .menu nav ul.show{
+        left: 0;
+    }
+    .menu ul .get-strted-btn{
+        display: none;
+    }
+    .slider-container{
+        flex-direction: column-reverse;
+        padding: 20px 50px 50px 50px;
+    }
+    .slider-container .nav-area li a{
+        font-size: 12px;
+        margin: 0px 5px ;
+    }
+    .slider-container .image-area{
+        width: 100%;
+    }
+    .slider-container .nav-area{
+        width: 100%;
+    }
+    .slider-container .nav-area ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-cta {
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+    .container-cta .col-text-cta {
+        width: 100%;
+    }
+    .container-cta .col-2-button {
+        width: 24%;
+    }
+    .footer-container {
+       flex-direction: column;
+       align-items: start;
+       background: url('../services/Mask\ group\ \(4\).png');
+       background-repeat: no-repeat;
+       background-size: cover;
+       padding: 50px 50px 30px 50px;
+    }
+    .footer-logo {
+        width: 18%;
+        padding-bottom: 20px;
+    }
+    .footer-menu {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .get-in-touch {
+        width: 44%;
+        padding-bottom: 20px;
+    }
+    .footer-social-icons {
+        width: 17%;
+    }
+    
+}
+@media(max-width:618px){
+    .container-cta .col-2-button {
+        width: 29%;
+    }
+}
+@media(max-width:538px){
+    .container-cta .col-2-button {
+        width: 34%;
+    }
+    .footer-menu {
+        width: 56%;
+    }  
+}
+@media(max-width:460px){
+    .container-cta .col-2-button {
+        width: 43%;
+    }
+    .footer-menu {
+        width: 100%;
+    }
+    .get-in-touch {
+        width: 80%;
+    }
+    .footer-social-icons {
+        width: 36%;
+    }
+}
